@@ -40,5 +40,6 @@ namespace Individual_Project_2._0
             TextBoxPrice.Text = string.Empty;
             TextBoxComments.Text = string.Empty;
         }
+        //
     }
 }
