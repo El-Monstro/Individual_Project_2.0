@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Individual_Project_2._0
@@ -8,11 +10,14 @@ namespace Individual_Project_2._0
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
             Ticket ticket = new Ticket();
             DataContext = ticket;
+
+
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -32,5 +37,6 @@ namespace Individual_Project_2._0
             // Отображение второго окна
             redaktWindow.ShowDialog();
         }
+
     }
 }

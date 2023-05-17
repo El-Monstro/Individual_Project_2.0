@@ -28,7 +28,7 @@
         </StackPanel>
 
         <!-- Список билетов -->
-        <DataGrid Grid.Row="2" Margin="10" ItemsSource="{Binding FilteredTickets}" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged">
+        <DataGrid x:Name="Coloms" Grid.Row="2" Margin="10" ItemsSource="{Binding FilteredTickets}" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Направление отправления" Binding="{Binding DepartureDestination}" Width="*"/>
                 <DataGridTextColumn Header="Направление прибытия" Binding="{Binding ArrivalDestination}" Width="*"/>

@@ -19,15 +19,28 @@ namespace Individual_Project_2._0
     /// </summary>
     public partial class AddTicket : Window
     {
+        private List<Ticket> tickets; // Коллекция билетов
+
         public AddTicket()
         {
             InitializeComponent();
+            tickets = new List<Ticket>(); // Инициализация коллекции билетов
+            Coloms.ItemsSource = tickets; // Установка источника данных для DataGrid
         }
 
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            // Получение выбранного билета из DataGrid
+            var selectedTicket = (Ticket)Coloms.SelectedItem;
 
+            // Проверка наличия выбранного билета
+            if (selectedTicket != null)
+            {
+                // Создание нового окна для отображения сохраненных данных
+                SavedTicketWindow savedTicketWindow = new SavedTicketWindow(selectedTicket);
+                savedTicketWindow.Show();
+            }
         }
 
 
@@ -40,6 +53,8 @@ namespace Individual_Project_2._0
             TextBoxPrice.Text = string.Empty;
             TextBoxComments.Text = string.Empty;
         }
-        //
+
+
+        
     }
 }
