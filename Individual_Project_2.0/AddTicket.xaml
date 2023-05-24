@@ -35,8 +35,8 @@
         <ComboBox x:Name="ComboBoxDirection" Grid.Row="2" Grid.Column="1" ItemsSource="{Binding Directions}" 
           SelectedItem="{Binding Direction, Mode=TwoWay}" Margin="5">
             <ComboBox.Items>
-                <ComboBoxItem>Оренбург - Москва</ComboBoxItem>
-                <ComboBoxItem>Оренбург - Санкт-Петербург</ComboBoxItem>
+                <ComboBoxItem Content="Оренбург - Москва" />
+                <ComboBoxItem Content="Оренбург - Санкт-Петербург" />
             </ComboBox.Items>
         </ComboBox>
 

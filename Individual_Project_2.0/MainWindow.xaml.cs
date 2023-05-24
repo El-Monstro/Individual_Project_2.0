@@ -10,14 +10,15 @@ namespace Individual_Project_2._0
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<Ticket> tickets = new ObservableCollection<Ticket>();
+
+        public object DataGridTickets { get; internal set; }
 
         public MainWindow()
         {
             InitializeComponent();
             Ticket ticket = new Ticket();
             DataContext = ticket;
-
-
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -32,7 +33,7 @@ namespace Individual_Project_2._0
 
         private void Add_Bilet(object sender, RoutedEventArgs e)
         {
-            AddTicket redaktWindow = new AddTicket();
+            AddTicket redaktWindow = new AddTicket(tickets);
 
             // Отображение второго окна
             redaktWindow.ShowDialog();

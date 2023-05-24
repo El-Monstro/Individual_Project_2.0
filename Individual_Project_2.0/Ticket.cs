@@ -15,4 +15,5 @@ namespace Individual_Project_2._0
         public decimal Price { get; set; }
         public string Comments { get; set; }
     }
+
 }
