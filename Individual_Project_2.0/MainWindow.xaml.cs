@@ -21,11 +21,6 @@ namespace Individual_Project_2._0
             DataContext = ticket;
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void Reset_Filters(object sender, RoutedEventArgs e)
         {
 
@@ -39,5 +34,20 @@ namespace Individual_Project_2._0
             redaktWindow.ShowDialog();
         }
 
+
+        private void ComboBox_SelectionChanged_2(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
