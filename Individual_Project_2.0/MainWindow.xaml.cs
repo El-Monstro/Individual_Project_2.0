@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,6 +20,7 @@ namespace Individual_Project_2._0
             InitializeComponent();
             Ticket ticket = new Ticket();
             DataContext = ticket;
+
         }
 
         private void Reset_Filters(object sender, RoutedEventArgs e)
@@ -42,6 +44,7 @@ namespace Individual_Project_2._0
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
+        
 
         }
 
@@ -49,5 +52,7 @@ namespace Individual_Project_2._0
         {
 
         }
+
+        //дирижабль
     }
 }

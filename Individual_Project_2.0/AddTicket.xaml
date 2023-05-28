@@ -37,6 +37,8 @@
             <ComboBox.Items>
                 <ComboBoxItem Content="Оренбург - Москва" />
                 <ComboBoxItem Content="Оренбург - Санкт-Петербург" />
+                <ComboBoxItem Content="Оренбург - Киев" />
+                <ComboBoxItem Content="Оренбург - Ростов" />
             </ComboBox.Items>
         </ComboBox>
 
