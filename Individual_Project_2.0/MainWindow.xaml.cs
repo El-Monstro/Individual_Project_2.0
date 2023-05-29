@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using Newtonsoft.Json;
 
 namespace Individual_Project_2._0
 {
@@ -12,6 +14,7 @@ namespace Individual_Project_2._0
     public partial class MainWindow : Window
     {
         private ObservableCollection<Ticket> tickets = new ObservableCollection<Ticket>();
+
 
         public object DataGridTickets { get; internal set; }
 
